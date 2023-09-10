@@ -9,7 +9,7 @@ const POST_NAME = "page.mdx";
 const POST_PATH = path.join("**", POST_NAME);
 const POST_URL_PREFIX = "/posts/";
 
-export const getAllPosts = async () => {
+const getAllPosts = async () => {
   return Promise.all(
     globSync(POST_PATH, { cwd: POSTS_DIR }).map(async (postPath) => {
       const fullPath = path.join(POSTS_DIR, postPath);
