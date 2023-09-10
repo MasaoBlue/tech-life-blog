@@ -64,6 +64,9 @@ devDependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.3.3)
+  '@types/gtag.js':
+    specifier: ^0.0.13
+    version: 0.0.13
   glob:
     specifier: ^10.3.4
     version: 10.3.4
@@ -422,6 +425,10 @@ packages:
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
     dev: false
+
+  /@types/gtag.js@0.0.13:
+    resolution: {integrity: sha512-yOXFkfnt1DQr1v9B4ERulJOGnbdVqnPHV8NG4nkQhnu4qbrJecQ06DlaKmSjI3nzIwBj5U9/X61LY4sTc2KbaQ==}
+    dev: true
 
   /@types/hast@2.3.5:
     resolution: {integrity: sha512-SvQi0L/lNpThgPoleH53cdjB3y9zpLlVjRbqB3rH8hx1jiRSBGAhyjV3H+URFjNVRqt2EdYNrbZE5IsGlNfpRg==}

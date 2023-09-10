@@ -17,7 +17,7 @@ export default function MainLayout(props: Props) {
         <article>{props.children}</article>
       </main>
       <footer className="w-full max-w-none dark:prose-invert text-center border-t border-zinc-800 py-12 mt-16">
-        Created by{" "}
+        Managed by{" "}
         <a href="https://twitter.com/tmaseaobclueh">@tmaseaobclueh</a>
       </footer>
     </div>
