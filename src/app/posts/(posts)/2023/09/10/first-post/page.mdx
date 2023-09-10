@@ -1,0 +1,89 @@
+export const meta = {
+  title: "最初の記事です",
+};
+
+import SampleComponent from "./SampleComponent";
+
+# {meta.title}
+
+初めての記事です。  
+色々試せるように Next.js で作ってみています。お手柔らかによろしくお願いします。
+
+このサイトのソースコードは以下のリポジトリで公開しています。  
+https://github.com/MasaoBlue/tech-life-blog
+
+## 色々テストしてみる
+
+### 箇条書き
+
+- 箇条書きいけてる？
+- いけてるかな
+
+1. 番号付き箇条書きとか
+2. 2 番目だよ
+   - 2-1 だよ
+
+### Code Block
+
+```tsx
+import { useFloating } from "@floating-ui/react";
+
+// コンポーネントだよ
+function MyComponent() {
+  const { refs, floatingStyles } = useFloating();
+
+  return (
+    <>
+      <div ref={refs.setReference} />
+      <div ref={refs.setFloating} style={floatingStyles} />
+    </>
+  );
+}
+```
+
+これも `インラインのブロック` いけますかね?
+
+### 引用
+
+> 引用とかもできるかな?
+
+### HTML タグ
+
+<div className="font-bold">太文字だよ</div>
+<div className="bg-blue-100">背景青だよ</div>
+<div className="text-red-500">文字赤だよ</div>
+
+### React Component 読み込み
+
+<SampleComponent />
+
+### Table
+
+by remark-gfm
+
+| a   | b   |   c |  d  |
+| --- | :-- | --: | :-: |
+| A   | B   |   C |  D  |
+
+### Inline Style Tag
+
+<style>
+  {`
+  .custom-style-test {
+    text-decoration: underline;
+  }
+`}
+</style>
+
+<div class="custom-style-test">インラインスタイルで下線を引いてみる</div>
+
+## References
+
+- [Next.js App Router で MDX を利用](https://zenn.dev/hayato94087/articles/1411f7af3eaee4)
+  - 初期構築はほぼこれ
+- [ブログサイトを Next.js App Router に移行したので学びを書く | stin's blog](https://blog.stin.ink/articles/update-blog-site-with-next-app-router)
+  - 思いつきはこの人のブログを見つけたことからだった
+- [Markdown All in One と mdx ファイルを関連づける](https://kangetsu121.work/2022/05/associate-mdx-with-markdown-plugin/)
+  - これをやらないと mdx ファイルを開いた時に JSX 部分の syntax highlight が効かなかった
+- [Nextjs で@next/mdx を使ったマークダウンの変換でシンタックスハイライトを実装する - Qiita](https://qiita.com/KokiSakano/items/571130652864432b8489)
+  - コードブロックの syntax highlight のための設定
