@@ -1,0 +1,25 @@
+export const meta = {
+  title: "記事のmdxを生成するスクリプトを追加した",
+};
+
+# {meta.title}
+
+正直ブログとして開設しておきながら、Zenn とどう使い分けようとか ZennZenn 考えてなかった。
+
+多分 React で何か試して、記事の中で動くものを置いて置きたい時とかに使うんだろうなと思ってはいる。
+
+とりあえず、いざ書き始めようとした時のハードルを少しでも下げるために、記事の mdx を生成するスクリプトを追加した。
+
+https://github.com/MasaoBlue/tech-life-blog/pull/4
+
+## 使い方
+
+```sh
+./create-today-post.sh my-post-slug
+```
+
+以上。
+
+記事のタイトル表示するために、先頭に `# {meta.title}` を書くようにしているんだけど、冗長だから本当は layout.tsx で勝手に表示するようにしたいなぁ、と思ったのでとりあえずチケットを発行した。やるかどうかは未定。
+
+https://github.com/users/MasaoBlue/projects/2?pane=issue&itemId=39572599

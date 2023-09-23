@@ -15,5 +15,8 @@
   "files.eol": "\n",
   "files.associations": {
     "*.css": "tailwindcss"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
