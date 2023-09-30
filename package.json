@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "create-pr": "gh pr create --title \"$(date '+%Y/%m/%d') の記事更新\" --web"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
